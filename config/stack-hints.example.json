@@ -1,0 +1,10 @@
+[
+  {
+    "pattern": "deploy_manifest",
+    "hint": "Si encaja, menciona una sola vez el skill o checklist de deploy antes de seguir."
+  },
+  {
+    "pattern": "api/|api3/",
+    "hint": "Si el cambio toca contrato API, recorda paridad entre clientes cuando aplique."
+  }
+]

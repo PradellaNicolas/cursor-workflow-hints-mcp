@@ -1,0 +1,15 @@
+{
+  "idleThresholdMinutes": 120,
+  "lowMcpAfterMinutes": 180,
+  "followupHour": 10,
+  "followupMinute": 30,
+  "workHours": {
+    "start": 8,
+    "end": 18
+  },
+  "notify": {
+    "enabled": true,
+    "aggressive": true
+  },
+  "workdaysOnly": true
+}

@@ -1,0 +1,30 @@
+{
+  "name": "cursor-workflow-hints-mcp",
+  "version": "0.1.0",
+  "description": "MCP + CLI for Cursor workflow hints, nudges and local activity tracking",
+  "type": "module",
+  "bin": {
+    "workflow-hints": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "cli": "node dist/cli.js",
+    "test": "npm run build && node --test dist/test/*.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "node-notifier": "^10.0.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "@types/node-notifier": "^8.0.5",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}

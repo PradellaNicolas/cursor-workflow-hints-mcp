@@ -1,0 +1,38 @@
+{
+  "sessionStart": [
+    {
+      "type": "command",
+      "command": "powershell -NoProfile -ExecutionPolicy Bypass -File ./hooks/workflow-hints/session-start.ps1",
+      "failClosed": false
+    }
+  ],
+  "afterFileEdit": [
+    {
+      "type": "command",
+      "command": "powershell -NoProfile -ExecutionPolicy Bypass -File ./hooks/workflow-hints/after-file-edit.ps1",
+      "failClosed": false
+    }
+  ],
+  "postToolUse": [
+    {
+      "type": "command",
+      "command": "powershell -NoProfile -ExecutionPolicy Bypass -File ./hooks/workflow-hints/post-tool-use.ps1",
+      "matcher": "Write|StrReplace|EditNotebook|Task",
+      "failClosed": false
+    }
+  ],
+  "beforeMCPExecution": [
+    {
+      "type": "command",
+      "command": "powershell -NoProfile -ExecutionPolicy Bypass -File ./hooks/workflow-hints/before-mcp-execution.ps1",
+      "failClosed": false
+    }
+  ],
+  "workspaceOpen": [
+    {
+      "type": "command",
+      "command": "powershell -NoProfile -ExecutionPolicy Bypass -File ./hooks/workflow-hints/workspace-open.ps1",
+      "failClosed": false
+    }
+  ]
+}
